@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <!-- Output -->
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+    </PropertyGroup>
+
+    <!-- Framework/Platform -->
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Platform>x64</Platform>
+    </PropertyGroup>
+
+    <!-- Language -->
+    <PropertyGroup>
+        <LangVersion>latest</LangVersion>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
+    </PropertyGroup>
+
+    <!-- Error/Warnings -->
+    <PropertyGroup>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <WarningsNotAsErrors>CS0169,CS7035,CS8981</WarningsNotAsErrors>
+    </PropertyGroup>
+
+    <!-- Code Generation -->
+    <PropertyGroup>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    </PropertyGroup>
+
+    <!-- Compiler -->
+    <PropertyGroup>
+        <DebugSymbols>true</DebugSymbols>
+        <Deterministic>false</Deterministic>
+        <PreserveCompilationContext>true</PreserveCompilationContext>
+    </PropertyGroup>
+
+    <!-- Platform -->
+    <PropertyGroup Condition="'$(Platform)'=='x64'">
+        <Platforms>x64</Platforms>
+        <PlatformTarget>x64</PlatformTarget>
+    </PropertyGroup>
+
+    <!-- Configuration (Debug) -->
+    <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+        <Optimize>false</Optimize>
+        <DefineConstants>TRACE</DefineConstants>
+    </PropertyGroup>
+
+    <!-- Configuration (Release) -->
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <Optimize>true</Optimize>
+        <TieredCompilation>true</TieredCompilation>
+        <TieredCompilationQuickJit>true</TieredCompilationQuickJit>
+        <TieredCompilationQuickJitForLoops>true</TieredCompilationQuickJitForLoops>
+    </PropertyGroup>
+
+    <!-- Generated -->
+    <ItemGroup>
+        <PackageReference Include="PDFsharp" Version="6.1.1" />
+        <PackageReference Include="SixLabors.ImageSharp" Version="3.1.5" />
+        <PackageReference Include="System.Drawing.Common" Version="8.0.7" />
+    </ItemGroup>
+
+</Project>

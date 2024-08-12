@@ -1,0 +1,75 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto eol=crlf
+
+# Text files
+# -------------------
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.inf   text eol=crlf
+*.ini   text eol=crlf
+*.json  text diff=json eol=crlf
+*.log   text -diff
+*.md    text eol=lf
+*.txt   text
+*.xml   text
+*.xsd   text
+
+# Git
+# -------------------
+.git*  text eol=lf
+
+# Scripts
+# -------------------
+*.sh  text eol=lf
+
+# Visual Studio
+# -------------------
+*.sln      text eol=crlf
+*.csproj   text eol=crlf
+*.njsproj  text eol=crlf
+*.targets  text eol=crlf
+
+# C/C++
+# -------------------
+*.c    text diff=c eol=lf
+*.cpp  text diff=cpp eol=lf
+*.h    text diff=c eol=lf
+
+# .NET
+# -------------------
+*.vb  text diff=vbnet eol=crlf
+*.cs  text diff=csharp eol=crlf
+
+# Web
+# -------------------
+*.css   text eol=crlf
+*.html  text eol=crlf
+*.js    text eol=crlf
+*.less  text eol=crlf
+*.scss  text eol=crlf
+
+# TypeScript
+# -------------------
+*.ts  text diff=typescript eol=crlf
+
+# Node.js
+# -------------------
+yarn.lock  text -diff
+*.vue      text diff=vue eol=crlf
+
+# Makefile
+# -------------------
+Makefile  text eol=lf
+*.mk      text eol=lf
+
+# Inno Setup
+# -------------------
+*.iss  text eol=crlf
+
+# Binary files
+# -------------------
+*.png  binary
+*.jpg  binary
+*.dll  binary
+*.exe  binary
+*.ico  binary

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDFutils", "PDFutils\PDFutils.csproj", "{5AD68D47-A8E0-41CE-816D-34BC44C3E60F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDFutils.OCR.Tesseract", "PDFutils.OCR.Tesseract\PDFutils.OCR.Tesseract.csproj", "{1726B350-97DC-47F0-A8ED-E3CF49B4FEA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDFutils.Console", "PDFutils.Console\PDFutils.Console.csproj", "{4A73EA96-B2D6-4838-B2DB-7B2A2900864D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AD68D47-A8E0-41CE-816D-34BC44C3E60F}.Debug|x64.ActiveCfg = Debug|x64
+		{5AD68D47-A8E0-41CE-816D-34BC44C3E60F}.Debug|x64.Build.0 = Debug|x64
+		{5AD68D47-A8E0-41CE-816D-34BC44C3E60F}.Release|x64.ActiveCfg = Release|x64
+		{5AD68D47-A8E0-41CE-816D-34BC44C3E60F}.Release|x64.Build.0 = Release|x64
+		{1726B350-97DC-47F0-A8ED-E3CF49B4FEA3}.Debug|x64.ActiveCfg = Debug|x64
+		{1726B350-97DC-47F0-A8ED-E3CF49B4FEA3}.Debug|x64.Build.0 = Debug|x64
+		{1726B350-97DC-47F0-A8ED-E3CF49B4FEA3}.Release|x64.ActiveCfg = Release|x64
+		{1726B350-97DC-47F0-A8ED-E3CF49B4FEA3}.Release|x64.Build.0 = Release|x64
+		{4A73EA96-B2D6-4838-B2DB-7B2A2900864D}.Debug|x64.ActiveCfg = Debug|x64
+		{4A73EA96-B2D6-4838-B2DB-7B2A2900864D}.Debug|x64.Build.0 = Debug|x64
+		{4A73EA96-B2D6-4838-B2DB-7B2A2900864D}.Release|x64.ActiveCfg = Release|x64
+		{4A73EA96-B2D6-4838-B2DB-7B2A2900864D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3EAE79B4-555B-4AAE-97CC-A4ED87B02A6B}
+	EndGlobalSection
+EndGlobal
